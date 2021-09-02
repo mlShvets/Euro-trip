@@ -1,0 +1,158 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 61px;
+
+  @media(max-width:$tablet-max) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: initial;
+    box-sizing: border-box;
+    min-height: 568px;
+    padding-top: 134px;
+    background-color: $white;
+  }
+}
+
+.main-nav__item {
+  &:not(:last-child) {
+    margin-right: 31px
+  }
+
+  @media(max-width:$tablet-max) {
+    width: 100%;
+    background-color: $light;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.main-nav__link {
+  color: $dark;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  padding: 8px 5px 5px;
+
+  &:hover,
+  &:focus {
+    color: $tomato;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media(max-width:$tablet-max) {
+    position: relative;
+    color: $menu-tab;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 16px;
+    min-width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 8px;
+      background: url("../img/arrow-menu.svg") no-repeat center;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  z-index: 1;
+  cursor: pointer;
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
+  @media(min-width:$desktop-min) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  @media(max-width:$tablet-max) {
+    .main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      background-color: $tomato;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../img/menu-burger.svg") center no-repeat;
+      }
+    }
+  }
+}
+
+.main-nav--opened {
+  @media(max-width:$tablet-max) {
+    .main-nav__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-nav__toggle {
+      background-color: transparent;
+      width: 50px;
+      height: 52px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 23px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../img/menu-cross.svg") center no-repeat;
+      }
+    }
+  }
+}
