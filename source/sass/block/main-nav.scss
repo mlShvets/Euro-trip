@@ -102,6 +102,9 @@
     opacity: 0.3;
   }
 
+  @media(max-width:$mobile-max) {
+    width: 50px;
+  }
 
   @media(min-width:$desktop-min) {
     display: none;

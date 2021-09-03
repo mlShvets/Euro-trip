@@ -1,0 +1,43 @@
+.footer-offer {
+  padding-left: 17%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 189px;
+    background-color: $gray;
+  }
+
+  @media(max-width:$tablet-max) {
+    text-align: center;
+    grid-column: 1/-1;
+    padding-left: 0;
+    padding-top: 30px;
+
+    &::before {
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $gray;
+    }
+  }
+}
+
+.footer-offer__title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $dark;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-offer__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $footer-color;
+}

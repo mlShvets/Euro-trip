@@ -12,3 +12,27 @@
 .page__body {
   margin: 0;
 }
+
+.page__footer {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-bottom: 74px;
+  max-width: 1160px;
+
+  @media(max-width:$tablet-max) {
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 54px;
+    padding-left: 21px;
+    padding-right: 21px;
+    max-width: 100%;
+  }
+
+  @media(max-width:$mobile-max) {
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding-bottom: 26px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
