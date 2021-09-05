@@ -1,0 +1,21 @@
+.title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0;
+  letter-spacing: -1.25px;
+  color: $dark-blue;
+  position: relative;
+
+  @media(max-width:$tablet-max) {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: initial;
+    position: initial;
+  }
+
+  @media(max-width:$mobile-max) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
