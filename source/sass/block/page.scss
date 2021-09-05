@@ -5,7 +5,6 @@
   font-weight: normal;
   line-height: 28px;
   min-width: $mobile;
-  max-width: $desktop-max;
   color: $light-dark;
 }
 
@@ -19,6 +18,7 @@
   grid-template-columns: repeat(3,1fr);
   padding-bottom: 74px;
   max-width: 1160px;
+  box-sizing: border-box;
 
   @media(max-width:$tablet-max) {
     grid-template-columns: repeat(2,1fr);

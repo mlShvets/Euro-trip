@@ -33,4 +33,8 @@ ol {
   @media(max-width:$tablet-max) {
     padding: 0;
   }
+
+  @media(max-width:$mobile-max) {
+    padding: 0 16px;
+  }
 }

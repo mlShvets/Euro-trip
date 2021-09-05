@@ -3,14 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 26px;
 
   @media(max-width:$tablet-max) {
+    box-sizing: border-box;
     padding: 0;
+    padding-top: 17px;
     position: relative;
+    flex-direction: column;
   }
-
 }
 
 .header__logo {

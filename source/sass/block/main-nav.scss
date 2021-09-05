@@ -1,3 +1,7 @@
+.main-nav {
+  z-index: 2;
+}
+
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +20,7 @@
     min-height: 568px;
     padding-top: 134px;
     background-color: $white;
+    margin-right: 0;
   }
 }
 
@@ -156,6 +161,24 @@
         transform: translate(-50%, -50%);
         background: url("../img/menu-cross.svg") center no-repeat;
       }
+    }
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  @media (max-width: $tablet-max) {
+    width: 100%;
+
+    .main-nav__list {
+      display: block;
+      position: initial;
+      min-height: auto;
+      padding: 20px 0;
+
     }
   }
 }
