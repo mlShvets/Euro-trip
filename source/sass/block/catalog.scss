@@ -1,13 +1,13 @@
 .catalog {
-  margin-bottom: 125px;
+  margin-bottom: 22px;
 
   @media(max-width:$tablet-max) {
-    margin-bottom: 95px;
+    margin-bottom: 52px;
     padding: 0 76px;
   }
 
   @media(max-width:$mobile-max) {
-    margin-bottom: 40px;
+    margin-bottom: 2px;
     padding: 0 16px;
   }
 }
@@ -133,7 +133,6 @@
 
 .catalog__link {
   position: relative;
-
   &:hover,
   &:focus {
     &::after {
@@ -172,4 +171,5 @@
   transform: translate(-50%, -50%);
   margin: 0;
   z-index: 1;
+  transition: 0.3s ease-in;
 }

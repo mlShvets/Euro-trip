@@ -137,223 +137,256 @@
               </picture>
               <figcaption class="catalog__caption">Хорватия</figcaption>
             </figure>
-          <p class="catalog__mask">Смотреть подробнее</p>
-        </a>
+            <p class="catalog__mask">Смотреть подробнее</p>
+          </a>
         </li>
       </ul>
     </section>
     <section class="places">
-      <h2 class="visually-hidden">Описание посещяемых мест и отзывы</h2>
-      <ul class="places__nav" id="place">
-        <li class="places__nav-item">Греция</li>
-        <li class="places__nav-item">Албания</li>
-        <li class="places__nav-item">Македония</li>
-        <li class="places__nav-item">Черногория</li>
-        <li class="places__nav-item">Хорватия</li>
-      </ul>
-      <ul class="places__list">
-        <li class="places__item" id="greece">
-          <div class="description">
-            <h3 class="description__title title">Греция</h3>
-            <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей,
-              расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот
-              монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной
-              горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
-              царящая в монастырях Метеоры. </p>
-            <a class="description__btn" href="#">Купить тур сейчас</a>
-          </div>
-          <div class="review">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/review/greece-mob.webp, img/review/greece-mob@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/review/greece-tab.webp, img/review/greece-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/review/greece.webp, img/review/greece@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/review/greece-mob.jpg, img/review/greece-mob@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/review/greece-tab.jpg, img/review/greece-tab@2x.jpg 2x">
-              <img class="review__img" src="img/review/greece.jpg" srcset="img/review/albania@2x.jpg 2x" width="350"
-                height="430" alt="Монастырь «Метеора» на скале в Греции">
-            </picture>
-            <div class="review__content">
-              <h4 class="review__title">Отзывы</h4>
-              <blockquote class="review__blockquote">
-                <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
-                  высоченные скалы. Но здесь
-                  потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю
-                  света!
-                </p>
-                <cite class="review__author">
-                  <picture>
-                    <source type="image/webp" srcset="img/review/golitsina.webp, img/review/golitsina@2x.webp 2x">
-                    <img class="review__photo" src="img/review/golitsina.jpg" srcset="img/review/golitsina@2x.jpg 2x"
-                      width="38" height="38" alt="фотография Влады Голициной">
-                  </picture>
-                  Влада Голицина
-                </cite>
-              </blockquote>
+      <div class="places__wrap container">
+        <h2 class="visually-hidden">Описание посещяемых мест и отзывы</h2>
+        <ul class="places__nav" id="place">
+          <li class="places__nav-item">
+            <a class="places__nav-btn places__nav-btn--current" href="#"> Греция</a>
+          </li>
+          <li class="places__nav-item">
+            <a class="places__nav-btn" href="#">Албания</a>
+          </li>
+          <li class="places__nav-item">
+            <a class="places__nav-btn" href="#">Македония</a>
+          </li>
+          <li class="places__nav-item">
+            <a class="places__nav-btn" href="#">Черногория</a>
+          </li>
+          <li class="places__nav-item">
+            <a class="places__nav-btn" href="#">Хорватия</a>
+          </li>
+        </ul>
+        <ul class="places__list">
+          <li class="places__item  places__item--current" id="greece">
+            <div class="description">
+              <h3 class="description__title title">Греция</h3>
+              <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей,
+                расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе».
+                Этот
+                монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной
+                горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
+                царящая в монастырях Метеоры. </p>
+              <a class="description__btn button" href="#">Купить тур сейчас</a>
             </div>
-          </div>
-        </li>
-        <li class="places__item" id="albania">
-          <div class="description">
-            <h3 class="description__title title">Албания</h3>
-            <p class="description__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
-              удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и
-              слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до
-              такого мелкого состояния.</p>
-            <a class="description__btn" href="#">Купить тур сейчас</a>
-          </div>
-          <div class="review">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/review/albania-mob.webp, img/review/albania-mob@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/review/albania-tab.webp, img/review/albania-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/review/albania.webp, img/review/albania@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/review/albania-mob.jpg, img/review/albania-mob@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/review/albania-tab.jpg, img/review/albania-tab@2x.jpg 2x">
-              <img class="review__img" src="img/review/albania.jpg" srcset="img/review/albania@2x.jpg 2x" width="350"
-                height="430" alt="Пляж курорта Ксамиль в Албании">
-            </picture>
-            <div class="review__content">
-              <h4 class="review__title">Отзывы</h4>
-              <blockquote class="review__blockquote">
-                <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с
-                  собой сестру, чтобы тоже смогла вкусить все красоты природы :)
-                </p>
-                <cite class="review__author">
-                  <picture>
-                    <source type="image/webp" srcset="img/review/marishka.webp, img/review/marishka@2x.webp 2x">
-                    <img class="review__photo" src="img/review/marishka.jpg" srcset="img/review/marishka@2x.jpg 2x"
-                      width="38" height="38" alt="фотография Маришки">
-                  </picture>
-                  Маришка
-                </cite>
-              </blockquote>
+            <div class="review">
+              <div class="review__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/review/greece-mob.webp, img/review/greece-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/review/greece-tab.webp, img/review/greece-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review/greece.webp, img/review/greece@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/review/greece-mob.jpg, img/review/greece-mob@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/review/greece-tab.jpg, img/review/greece-tab@2x.jpg 2x">
+                  <img class="review__img" src="img/review/greece.jpg" srcset="img/review/albania@2x.jpg 2x" width="430"
+                    height="596" alt="Монастырь «Метеора» на скале в Греции">
+                </picture>
+              </div>
+              <div class="review__content">
+                <h4 class="review__title">Отзывы</h4>
+                <blockquote class="review__blockquote">
+                  <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
+                    высоченные скалы. Но здесь
+                    потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю
+                    света!
+                  </p>
+                  <cite class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/review/golitsina.webp, img/review/golitsina@2x.webp 2x">
+                      <img class="review__photo" src="img/review/golitsina.jpg" srcset="img/review/golitsina@2x.jpg 2x"
+                        width="38" height="38" alt="фотография Влады Голициной">
+                    </picture>
+                    Влада Голицина
+                  </cite>
+                </blockquote>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="places__item" id="macedonia">
-          <div class="description">
-            <h3 class="description__title title">Македония</h3>
-            <p class="description__text">В Македонии нашей целью будет посетить Палаошник, который расположился в
-              удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся
-              на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.</p>
-            <a class="description__btn" href="#">Купить тур сейчас</a>
-          </div>
-          <div class="review">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/review/macedonia-mob.webp, img/review/macedonia-mob@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/review/macedonia-tab.webp, img/review/macedonia-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/review/macedonia.webp, img/review/macedonia@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/review/macedonia-mob.jpg, img/review/macedonia-mob@2x.jpg 2x">
-              <source media="(max-width: 1023px)"
-                srcset="img/review/macedonia-tab.jpg, img/review/macedonia-tab@2x.jpg 2x">
-              <img class="review__img" src="img/review/macedonia.jpg" srcset="img/review/macedonia@2x.jpg 2x"
-                width="350" height="430" alt="Собор на фоне Охридского озера в Македонии">
-            </picture>
-            <div class="review__content">
-              <h4 class="review__title">Отзывы</h4>
-              <blockquote class="review__blockquote">
-                <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем
-                  в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила,
-                  особенно после долгого пути в гору.
-                </p>
-                <cite class="review__author">
-                  <picture>
-                    <source type="image/webp" srcset="img/review/kuzmin.webp, img/review/kuzmin@2x.webp 2x">
-                    <img class="review__photo" src="img/review/kuzmin.jpg" srcset="img/review/kuzmin@2x.jpg 2x"
-                      width="38" height="38" alt="фотография Михаила Кузьмина">
-                  </picture>
-                  Михаил Кузьмин
-                </cite>
-              </blockquote>
+          </li>
+          <li class="places__item" id="albania">
+            <div class="description">
+              <h3 class="description__title title">Албания</h3>
+              <p class="description__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой
+                и
+                удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный
+                и
+                слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до
+                такого мелкого состояния.</p>
+              <a class="description__btn button" href="#">Купить тур сейчас</a>
             </div>
-          </div>
-        </li>
-        <li class="places__item" id="montenegro">
-          <div class="description">
-            <h3 class="description__title title">Черногория</h3>
-            <p class="description__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
-              некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
-              каньона составляет 80 км. </p>
-            <a class="description__btn" href="#">Купить тур сейчас</a>
-          </div>
-          <div class="review">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/review/montenegro-mob.webp, img/review/montenegro-mob@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/review/montenegro-tab.webp, img/review/montenegro-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/review/montenegro.webp, img/review/montenegro@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/review/montenegro-mob.jpg, img/review/montenegro-mob@2x.jpg 2x">
-              <source media="(max-width: 1023px)"
-                srcset="img/review/montenegro-tab.jpg, img/review/montenegro-tab@2x.jpg 2x">
-              <img class="review__img" src="img/review/montenegro.jpg" srcset="img/review/montenegro@2x.jpg 2x"
-                width="350" height="430" alt="Каньон реки Тара в Черногории">
-            </picture>
-            <div class="review__content">
-              <h4 class="review__title">Отзывы</h4>
-              <blockquote class="review__blockquote">
-                <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
-                  фильмах :) Всем советую
-                </p>
-                <cite class="review__author">
-                  <picture>
-                    <source type="image/webp" srcset="img/review/mey.webp, img/review/mey@2x.webp 2x">
-                    <img class="review__photo" src="img/review/mey.jpg" srcset="img/review/mey@2x.jpg 2x" width="38"
-                      height="38" alt="фотография Анастасии Мей">
-                  </picture>
-                  Анастасия Мей
-                </cite>
-              </blockquote>
+            <div class="review">
+              <div class="review__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/review/albania-mob.webp, img/review/albania-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/review/albania-tab.webp, img/review/albania-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review/albania.webp, img/review/albania@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/review/albania-mob.jpg, img/review/albania-mob@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/review/albania-tab.jpg, img/review/albania-tab@2x.jpg 2x">
+                  <img class="review__img" src="img/review/albania.jpg" srcset="img/review/albania@2x.jpg 2x"
+                    width="430" height="596" alt="Пляж курорта Ксамиль в Албании">
+                </picture>
+              </div>
+              <div class="review__content">
+                <h4 class="review__title">Отзывы</h4>
+                <blockquote class="review__blockquote">
+                  <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с
+                    собой сестру, чтобы тоже смогла вкусить все красоты природы :)
+                  </p>
+                  <cite class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/review/marishka.webp, img/review/marishka@2x.webp 2x">
+                      <img class="review__photo" src="img/review/marishka.jpg" srcset="img/review/marishka@2x.jpg 2x"
+                        width="38" height="38" alt="фотография Маришки">
+                    </picture>
+                    Маришка
+                  </cite>
+                </blockquote>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="places__item" id="croatia">
-          <div class="description">
-            <h3 class="description__title title">Хорватия</h3>
-            <p class="description__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
-              увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными
-              скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет. </p>
-            <a class="description__btn" href="#">Купить тур сейчас</a>
-          </div>
-          <div class="review">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/review/croatia-mob.webp, img/review/croatia-mob@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/review/croatia-tab.webp, img/review/croatia-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/review/croatia.webp, img/review/croatia@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/review/croatia-mob.jpg, img/review/croatia-mob@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/review/croatia-tab.jpg, img/review/croatia-tab@2x.jpg 2x">
-              <img class="review__img" src="img/review/croatia.jpg" srcset="img/review/croatia@2x.jpg 2x" width="350"
-                height="430" alt="Пещера Бередине в Хорватии">
-            </picture>
-            <div class="review__content">
-              <h4 class="review__title">Отзывы</h4>
-              <blockquote class="review__blockquote">
-                <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А
-                  то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур
-                  ни с чем не спутать по итогу :)
-                </p>
-                <cite class="review__author">
-                  <picture>
-                    <source type="image/webp" srcset="img/review/mulitsin.webp, img/review/mulitsin@2x.webp 2x">
-                    <img class="review__photo" src="img/review/mulitsin.jpg" srcset="img/review/mulitsin@2x.jpg 2x"
-                      width="38" height="38" alt="фотография Владимира Мулицина">
-                  </picture>
-                  Владимир Мулицин
-                </cite>
-              </blockquote>
+          </li>
+          <li class="places__item" id="macedonia">
+            <div class="description">
+              <h3 class="description__title title">Македония</h3>
+              <p class="description__text">В Македонии нашей целью будет посетить Палаошник, который расположился в
+                удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы
+                заберемся
+                на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.
+              </p>
+              <a class="description__btn button" href="#">Купить тур сейчас</a>
             </div>
-          </div>
-        </li>
-      </ul>
+            <div class="review">
+              <div class="review__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/review/macedonia-mob.webp, img/review/macedonia-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/review/macedonia-tab.webp, img/review/macedonia-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review/macedonia.webp, img/review/macedonia@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/review/macedonia-mob.jpg, img/review/macedonia-mob@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/review/macedonia-tab.jpg, img/review/macedonia-tab@2x.jpg 2x">
+                  <img class="review__img" src="img/review/macedonia.jpg" srcset="img/review/macedonia@2x.jpg 2x"
+                    width="430" height="596" alt="Собор на фоне Охридского озера в Македонии">
+                </picture>
+              </div>
+              <div class="review__content">
+                <h4 class="review__title">Отзывы</h4>
+                <blockquote class="review__blockquote">
+                  <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем
+                    в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила,
+                    особенно после долгого пути в гору.
+                  </p>
+                  <cite class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/review/kuzmin.webp, img/review/kuzmin@2x.webp 2x">
+                      <img class="review__photo" src="img/review/kuzmin.jpg" srcset="img/review/kuzmin@2x.jpg 2x"
+                        width="38" height="38" alt="фотография Михаила Кузьмина">
+                    </picture>
+                    Михаил Кузьмин
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+          <li class="places__item" id="montenegro">
+            <div class="description">
+              <h3 class="description__title title">Черногория</h3>
+              <p class="description__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
+                некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
+                каньона составляет 80 км. </p>
+              <a class="description__btn button" href="#">Купить тур сейчас</a>
+            </div>
+            <div class="review">
+              <div class="review__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/review/montenegro-mob.webp, img/review/montenegro-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/review/montenegro-tab.webp, img/review/montenegro-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review/montenegro.webp, img/review/montenegro@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/review/montenegro-mob.jpg, img/review/montenegro-mob@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/review/montenegro-tab.jpg, img/review/montenegro-tab@2x.jpg 2x">
+                  <img class="review__img" src="img/review/montenegro.jpg" srcset="img/review/montenegro@2x.jpg 2x"
+                    width="430" height="596" alt="Каньон реки Тара в Черногории">
+                </picture>
+              </div>
+              <div class="review__content">
+                <h4 class="review__title">Отзывы</h4>
+                <blockquote class="review__blockquote">
+                  <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
+                    фильмах :) Всем советую
+                  </p>
+                  <cite class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/review/mey.webp, img/review/mey@2x.webp 2x">
+                      <img class="review__photo" src="img/review/mey.jpg" srcset="img/review/mey@2x.jpg 2x" width="38"
+                        height="38" alt="фотография Анастасии Мей">
+                    </picture>
+                    Анастасия Мей
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+          <li class="places__item" id="croatia">
+            <div class="description">
+              <h3 class="description__title title">Хорватия</h3>
+              <p class="description__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
+                увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными
+                скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет. </p>
+              <a class="description__btn button" href="#">Купить тур сейчас</a>
+            </div>
+            <div class="review">
+              <div class="review__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/review/croatia-mob.webp, img/review/croatia-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/review/croatia-tab.webp, img/review/croatia-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review/croatia.webp, img/review/croatia@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/review/croatia-mob.jpg, img/review/croatia-mob@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/review/croatia-tab.jpg, img/review/croatia-tab@2x.jpg 2x">
+                  <img class="review__img" src="img/review/croatia.jpg" srcset="img/review/croatia@2x.jpg 2x"
+                    width="430" height="596" alt="Пещера Бередине в Хорватии">
+                </picture>
+              </div>
+              <div class="review__content">
+                <h4 class="review__title">Отзывы</h4>
+                <blockquote class="review__blockquote">
+                  <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А
+                    то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур
+                    ни с чем не спутать по итогу :)
+                  </p>
+                  <cite class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/review/mulitsin.webp, img/review/mulitsin@2x.webp 2x">
+                      <img class="review__photo" src="img/review/mulitsin.jpg" srcset="img/review/mulitsin@2x.jpg 2x"
+                        width="38" height="38" alt="фотография Владимира Мулицина">
+                    </picture>
+                    Владимир Мулицин
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="prices" id="price">
       <div class="prices__wrap">
