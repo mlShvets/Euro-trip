@@ -15,21 +15,21 @@
 .page__footer {
   text-align: left;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  padding-bottom: 34px;
+  grid-template-columns: repeat(3, 1fr);
   box-sizing: border-box;
   padding: 0;
+  padding-bottom: 34px;
   padding-right: 10px;
 
-  @media(max-width:$tablet-max) {
-    grid-template-columns: repeat(2,1fr);
+  @media (max-width: $tablet-max) {
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 41px;
     padding-left: 21px;
     padding-right: 21px;
     max-width: 100%;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     text-align: center;
     grid-template-columns: 1fr;
     padding-bottom: 16px;

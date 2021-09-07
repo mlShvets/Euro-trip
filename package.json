@@ -1,30 +1,32 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "start-template",
   "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "2.27.x",
+    "eslint": "^7.32.0",
+    "eslint-config-htmlacademy": "^4.0.2",
     "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
+    "gulp-csso": "^4.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-imagemin": "7.1.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-svgstore": "^7.0.1",
+    "gulp-postcss": "9.0.x",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "5.0.x",
+    "gulp-sourcemaps": "3.0.x",
+    "gulp-svgstore": "^8.0.0",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "9.10.x",
+    "postcss-loader": "^6.1.1",
+    "posthtml-include": "^1.7.1",
+    "sass": "^1.39.0",
+    "stylelint": "13.13.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -53,6 +55,6 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^6.0.0"
   }
 }

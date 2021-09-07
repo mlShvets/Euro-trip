@@ -1,7 +1,7 @@
 .footer-trips {
   font-size: 14px;
   line-height: 17px;
-  color: rgba(20, 21, 23, .5);
+  color: rgba(20, 21, 23, 0.5);
   position: relative;
 
   &::after {
@@ -14,7 +14,7 @@
     background-color: $gray;
   }
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     margin-bottom: 30px;
 
     &::after {
@@ -23,7 +23,7 @@
     }
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     padding-bottom: 28px;
     margin-bottom: 30px;
 
@@ -51,20 +51,19 @@
   grid-template-columns: 34% 32% 32%;
   row-gap: 20px;
 
-  @media(max-width:$tablet-max) {
-    grid-template-columns: 34% 35% 33%;;
+  @media (max-width: $tablet-max) {
+    grid-template-columns: 34% 35% 33%;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 22px;
-
   }
 }
 
 .footer-trips__list {
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     &:nth-child(3) {
       grid-column: 1/-1;
     }

@@ -12,7 +12,7 @@
     background-color: $gray;
   }
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     text-align: center;
     grid-column: 1/-1;
     padding-left: 0;

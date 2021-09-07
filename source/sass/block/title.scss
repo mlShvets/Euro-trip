@@ -7,14 +7,14 @@
   color: $dark-blue;
   position: relative;
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     font-size: 30px;
     line-height: 45px;
     letter-spacing: initial;
     position: initial;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     font-size: 24px;
     line-height: 36px;
   }

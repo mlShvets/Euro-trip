@@ -9,7 +9,7 @@
   justify-content: center;
   margin-right: 67px;
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,10 +26,10 @@
 
 .main-nav__item {
   &:not(:last-child) {
-    margin-right: 31px
+    margin-right: 31px;
   }
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     width: 100%;
     background-color: $light;
 
@@ -56,7 +56,7 @@
     opacity: 0.6;
   }
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     position: relative;
     color: $menu-tab;
     font-size: 20px;
@@ -107,17 +107,17 @@
     opacity: 0.3;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     width: 50px;
   }
 
-  @media(min-width:$desktop-min) {
+  @media (min-width: $desktop-min) {
     display: none;
   }
 }
 
 .main-nav--closed {
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     .main-nav__list {
       display: none;
     }
@@ -140,7 +140,7 @@
 }
 
 .main-nav--opened {
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     .main-nav__list {
       display: flex;
       flex-direction: column;

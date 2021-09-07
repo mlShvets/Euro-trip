@@ -1,12 +1,12 @@
-$tomato:#FE7865;
-$orange:#F17D4B;
+$tomato:#fe7865;
+$orange:#f17d4b;
 $dark:#141517;
-$dark-blue:#2C2E3F;
+$dark-blue:#2c2e3f;
 $black:#000000;
-$white:#FFFFFF;
-$light:#FBF8F8;
+$white:#ffffff;
+$light:#fbf8f8;
 $light-dark:rgba(44, 46, 63, 0.7);
-$gray:#D7D9DF;
+$gray:#d7d9df;
 $font-montserrat:"Montserrat","Arial", sans-serif;
 $mobile:320px;
 $mobile-max:767px;
@@ -14,20 +14,23 @@ $tablet:768px;
 $tablet-max:1023px;
 $desktop-min:1024px;
 $desktop-max:1280px;
-$menu-tab:#48494D;
+$menu-tab:#48494d;
 $footer-color:rgba(20, 21, 23, 0.5);
-$footer-svg:#D7D9DF;
+$footer-svg:#d7d9df;
 
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
   }
+
   70% {
     transform: translateY(30px);
   }
+
   90% {
     transform: translateY(-10px);
   }
+
   to {
     transform: translateY(0);
   }

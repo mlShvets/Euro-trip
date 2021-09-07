@@ -30,11 +30,11 @@ ol {
   max-width: 1170px;
   padding: 0 40px;
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     padding: 0 21px;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     padding: 0 16px;
   }
 }

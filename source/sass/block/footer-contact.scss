@@ -1,12 +1,12 @@
 .footer-contact {
   justify-self: center;
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     padding-left: 16%;
     margin-bottom: 20px;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     text-align: center;
     padding-left: 0;
     margin-bottom: 23px;
@@ -26,7 +26,7 @@
   &:not(:last-of-type) {
     margin-bottom: 17px;
 
-    @media(max-width:$mobile-max) {
+    @media (max-width: $mobile-max) {
       margin-bottom: 20px;
     }
   }
@@ -56,11 +56,11 @@
       background: url("../img/icon-email.svg") no-repeat center;
     }
 
-    @media(max-width:$tablet-max) {
+    @media (max-width: $tablet-max) {
       text-decoration: none;
     }
 
-    @media(max-width:$mobile-max) {
+    @media (max-width: $mobile-max) {
       margin-left: 10px;
     }
   }

@@ -1,6 +1,6 @@
 .modal {
   box-sizing: border-box;
-  animation: bounce .6s;
+  animation: bounce 0.6s;
   position: fixed;
   right: 0;
   left: 0;
@@ -23,7 +23,7 @@
   color: $menu-tab;
   padding: 50px;
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     width: 90%;
   }
 }
@@ -40,7 +40,7 @@
   width: 22px;
   height: 22px;
   padding: 22px;
-  background: url(../img/menu-cross.svg) center no-repeat;
+  background: url("../img/menu-cross.svg") center no-repeat;
   border: none;
 }
 
@@ -59,7 +59,7 @@
   background-position: left center;
   background-size: 338px 100%;
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     width: min-content;
     background-image: none;
 
@@ -76,7 +76,7 @@
   width: 390px;
   text-align: center;
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     background-color: $white;
     padding-left: 16px;
     padding-right: 16px;
@@ -93,7 +93,7 @@
   margin-bottom: 50px;
   margin-top: 22px;
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     margin-top: 50px;
   }
 }
@@ -106,7 +106,7 @@
   margin-bottom: 20px;
   justify-content: center;
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     grid-template-columns: 1fr;
   }
 }
@@ -154,7 +154,7 @@
     outline-color: $tomato;
   }
 
-  &:focus:invalid+.modal__invalid {
+  &:focus:invalid + .modal__invalid {
     visibility: visible;
   }
 }
@@ -176,11 +176,11 @@
   max-width: 176px;
   width: 100%;
 
-  @media(max-width:$tablet-max) {
+  @media (max-width: $tablet-max) {
     max-width: 250px;
   }
 
-  @media(max-width:$mobile-max) {
+  @media (max-width: $mobile-max) {
     max-width: 288px;
     padding: 19px 31px 19px 36px;
   }
