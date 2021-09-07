@@ -1,0 +1,110 @@
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 306px;
+  gap: 8%;
+
+  @media(max-width:$tablet-max) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+}
+
+.prices__offer {
+  margin-top: 117px;
+  grid-column: 2/-1;
+
+  @media(max-width:$tablet-max) {
+    text-align: center;
+    margin-top: 0;
+    grid-row: 1;
+    grid-column: 1/-1;
+    margin-bottom: 40px;
+  }
+}
+
+.prices__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media(min-width:$desktop-min) {
+    padding-bottom: 22px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 175px;
+      height: 3px;
+      background-color: $tomato;
+    }
+  }
+
+  @media(max-width:$tablet-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.prices__contact-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $dark;
+
+  @media(max-width:$tablet-max) {
+    font-size: 18px;
+  }
+}
+
+.prices__text {
+  margin: 0;
+  margin-bottom: 60px;
+  line-height: 27px;
+
+  @media(max-width:$tablet-max) {
+    margin-bottom: 32px;
+  }
+
+  @media(max-width:$mobile-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.prices__contact-title {
+  margin: 0;
+  margin-bottom: 13px;
+  text-align: center;
+  letter-spacing: normal;
+
+  @media(max-width:$tablet-max) {
+    margin-bottom: 10px;
+  }
+}
+
+.prices__contact-tel {
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+
+  @media(min-width:$desktop-min) {
+    padding-left: 46px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -4px;
+      width: 30px;
+      height: 30px;
+      background: url("../img/phone-red.svg") no-repeat center;
+    }
+  }
+
+  @media(max-width:$tablet-max) {
+    color: $tomato;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+}

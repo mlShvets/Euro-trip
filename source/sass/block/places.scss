@@ -24,6 +24,10 @@
   @media(max-width:$tablet-max) {
     margin-bottom: 80px;
   }
+
+  @media(max-width:$mobile-max) {
+    margin-bottom: 48px;
+  }
 }
 
 .places__wrap {
