@@ -5,10 +5,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../img/background/form-bg.jpg");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/form-bg@2x.jpg");
+  @media(min-width:$tablet) {
+    background-image: url("../img/background/form-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/form-bg@2x.jpg");
+    }
   }
 
   background-repeat: no-repeat;
@@ -22,14 +25,9 @@
   }
 
   @media(max-width:$mobile-max) {
-    background-image: none;
     background-color: $light;
     min-height: auto;
     margin-bottom: 60px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: none;
-    }
   }
 }
 

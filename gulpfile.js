@@ -105,8 +105,7 @@ gulp.task("minjs", function () {
   return gulp.src("source/js/*.js")
     .pipe(jsmin())
     .pipe(rename({suffix: ".min"}))
-    .pipe(gulp.dest("build/js"))
-    // .pipe(server.reload());
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task('media-queries', function () {

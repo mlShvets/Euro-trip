@@ -13,6 +13,10 @@
     position: relative;
     flex-direction: column;
   }
+
+  @media(max-width:$mobile-max) {
+    padding: 17px 0 0;
+  }
 }
 
 .header__logo {
