@@ -491,22 +491,22 @@
         </li>
       </ul>
     </section>
-    <section class="feedback">
+    <section class="feedback container">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <h2 class="feedback__title">У Вас остались вопросы?</h2>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <ul class="feedback__list">
           <li class="feedback__item feedback__item--phone">
             <label class="visually-hidden" for="phone">Введите телефон</label>
-            <input class="feedback__input" type="tel" name="tel" id="phone" placeholder="+7 Введите 10 цифр номера"
+            <input class="feedback__input feedback__input--phone" type="tel" name="tel" id="phone" placeholder="+7 Введите 10 цифр номера"
               required>
           </li>
           <li class="feedback__item">
             <label class="visually-hidden" for="email">Введите электронну почту</label>
-            <input class="feedback__input" type="email" name="email" id="email" placeholder="E-mail">
+            <input class="feedback__input feedback__input--email" type="email" name="email" id="email" placeholder="E-mail">
           </li>
         </ul>
-        <button class="feedback__btn" type="submit">Отправить</button>
+        <button class="feedback__btn button" type="submit">Отправить</button>
       </form>
     </section>
   </main>

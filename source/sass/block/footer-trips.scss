@@ -24,7 +24,7 @@
   }
 
   @media(max-width:$mobile-max) {
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     margin-bottom: 30px;
 
     &::after {
@@ -48,7 +48,7 @@
 
 .footer-trips__list-wrap {
   display: grid;
-  grid-template-columns: 34% 32% 32%;
+  grid-template-columns: 33% 32% 32%;
   row-gap: 20px;
 
   @media(max-width:$tablet-max) {
