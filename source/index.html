@@ -145,7 +145,7 @@
     <section class="places">
       <div class="places__wrap container">
         <h2 class="visually-hidden">Описание посещяемых мест и отзывы</h2>
-        <ul class="places__nav" id="place">
+        <ul class="places__nav" id="tours">
           <li class="places__nav-item">
             <a class="places__nav-btn places__nav-btn--current" href="#greece" data-name="greece"> Греция</a>
           </li>
@@ -579,14 +579,14 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
           <ul class="modal__list">
             <li class="modal__item modal__item--phone">
-              <label class="visually-hidden" for="phone">Введите телефон</label>
-              <input class="modal__input modal__input--phone" type="tel" name="tel" id="phone"
+              <label class="visually-hidden" for="popup-phone">Введите телефон</label>
+              <input class="modal__input modal__input--phone" type="tel" name="tel" id="popup-phone"
                 placeholder="+7 Введите 10 цифр номера" required>
               <span class="modal__invalid">Данные не верны</span>
             </li>
             <li class="modal__item">
-              <label class="visually-hidden" for="email">Введите электронну почту</label>
-              <input class="modal__input modal__input--email" type="email" name="email" id="email" placeholder="E-mail">
+              <label class="visually-hidden" for="popup-email">Введите электронну почту</label>
+              <input class="modal__input modal__input--email" type="email" name="email" id="popup-email" placeholder="E-mail">
               <span class="modal__invalid">Данные не верны</span>
             </li>
           </ul>
@@ -597,7 +597,7 @@
     </div>
   </template>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

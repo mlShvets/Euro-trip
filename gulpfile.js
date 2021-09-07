@@ -16,6 +16,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var gcmq = require('gulp-group-css-media-queries');
+var jsmin = require('gulp-jsmin');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -42,6 +44,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("minjs", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -98,11 +101,25 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("minjs", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(jsmin())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
+    // .pipe(server.reload());
+});
+
 gulp.task('media-queries', function () {
   return gulp.src('build/css/style.min.css')
       .pipe(gcmq())
       .pipe(gulp.dest('build/css'));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "media-queries"));
+gulp.task('minify', () => {
+  return gulp.src('build/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify", "minjs", "media-queries"));
 gulp.task("start", gulp.series("build", "server"));
