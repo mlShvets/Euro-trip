@@ -24,7 +24,7 @@
   }
 }
 
-.feedback-form {
+.feedback__content {
   box-sizing: border-box;
   padding: 50px;
   margin-right: -38px;
@@ -90,19 +90,22 @@
 
 }
 
-.feedback__item--phone {
+.feedback__item {
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "*";
-    top: 5px;
-    left: 14px;
-    width: 6px;
-    height: 26px;
-    color: $tomato;
+  &--phone {
+    &::before {
+      position: absolute;
+      content: "*";
+      top: 5px;
+      left: 14px;
+      width: 6px;
+      height: 26px;
+      color: $tomato;
+    }
   }
 }
+
 
 
 .feedback__input {
@@ -126,6 +129,25 @@
     line-height: 17px;
     letter-spacing: 1px;
   }
+
+  &:focus:invalid {
+    border-color: $tomato;
+    outline-color: $tomato;
+  }
+
+  &:focus:invalid+.feedback__invalid {
+    visibility: visible;
+  }
+}
+
+.feedback__invalid {
+  visibility: hidden;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: $tomato;
 }
 
 .feedback__btn {

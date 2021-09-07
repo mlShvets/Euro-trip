@@ -15,6 +15,31 @@
   <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/desktop.png" );
+    }
+    /* Tablet */
+    @media ( max-width: 1023px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/tablet.png" );
+      }
+    }
+    /* Desktop */
+    @media ( max-width: 767px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/mobile.png" );
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
 </head>
 
 <body class="page__body">
@@ -492,22 +517,27 @@
       </ul>
     </section>
     <section class="feedback container">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="feedback__content">
         <h2 class="feedback__title">У Вас остались вопросы?</h2>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <ul class="feedback__list">
-          <li class="feedback__item feedback__item--phone">
-            <label class="visually-hidden" for="phone">Введите телефон</label>
-            <input class="feedback__input feedback__input--phone" type="tel" name="tel" id="phone" placeholder="+7 Введите 10 цифр номера"
-              required>
-          </li>
-          <li class="feedback__item">
-            <label class="visually-hidden" for="email">Введите электронну почту</label>
-            <input class="feedback__input feedback__input--email" type="email" name="email" id="email" placeholder="E-mail">
-          </li>
-        </ul>
-        <button class="feedback__btn button" type="submit">Отправить</button>
-      </form>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <ul class="feedback__list">
+            <li class="feedback__item feedback__item--phone">
+              <label class="visually-hidden" for="phone">Введите телефон</label>
+              <input class="feedback__input feedback__input--phone" type="tel" name="tel" id="phone"
+                placeholder="+7 Введите 10 цифр номера" required>
+              <span class="feedback__invalid">Данные не верны</span>
+            </li>
+            <li class="feedback__item">
+              <label class="visually-hidden" for="email">Введите электронну почту</label>
+              <input class="feedback__input feedback__input--email" type="email" name="email" id="email"
+                placeholder="E-mail">
+              <span class="feedback__invalid">Данные не верны</span>
+            </li>
+          </ul>
+          <button class="feedback__btn button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page__footer container">
