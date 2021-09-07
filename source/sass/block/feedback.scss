@@ -1,14 +1,19 @@
 .feedback {
-  background-image: url("../img/background/form-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 844px 100%;
   box-sizing: border-box;
   min-height: 455px;
   margin-bottom: 160px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-image: url("../img/background/form-bg.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/form-bg@2x.jpg");
+  }
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 844px 100%;
 
   @media(max-width:$tablet-max) {
     justify-content: center;
@@ -47,7 +52,6 @@
     background-color: transparent;
     box-shadow: none;
     min-height: auto;
-
   }
 }
 
@@ -87,7 +91,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
 }
 
 .feedback__item {
@@ -105,8 +108,6 @@
     }
   }
 }
-
-
 
 .feedback__input {
   padding: 15px;

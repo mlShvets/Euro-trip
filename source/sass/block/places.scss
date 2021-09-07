@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  overflow-x: hidden;
+  overflow-x: auto;
   flex-wrap: nowrap;
   max-width: 902px;
   padding-bottom: 14px;
@@ -68,6 +68,14 @@
 
   &:last-child {
     margin-right: 0px;
+
+    @media(max-width:$tablet-max) {
+      margin-right: 21px;
+    }
+
+    @media(max-width:$mobile-max) {
+      margin-right: 16px;
+    }
   }
 }
 

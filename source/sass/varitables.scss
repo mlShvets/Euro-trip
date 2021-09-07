@@ -17,3 +17,18 @@ $desktop-max:1280px;
 $menu-tab:#48494D;
 $footer-color:rgba(20, 21, 23, 0.5);
 $footer-svg:#D7D9DF;
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

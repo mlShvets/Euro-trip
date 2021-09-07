@@ -15,31 +15,6 @@
   <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <!-- <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "img/desktop.png" );
-    }
-    /* Tablet */
-    @media ( max-width: 1023px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "img/tablet.png" );
-      }
-    }
-    /* Desktop */
-    @media ( max-width: 767px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "img/mobile.png" );
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script> -->
 </head>
 
 <body class="page__body">
@@ -75,13 +50,13 @@
       </div>
     </section>
     <section class="catalog container">
-      <div class="catalog_header">
+      <div class="catalog__header">
         <h2 class="catalog__title title">Места посещения</h2>
         <p class="catalog__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <a class="catalog__link" href="#greece">
+          <a class="catalog__link" href="#greece" data-name="greece">
             <figure class="catalog__figure">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -98,7 +73,7 @@
           </a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link" href="#albania">
+          <a class="catalog__link" href="#albania" data-name="albania">
             <figure class="catalog__figure">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -115,7 +90,7 @@
           </a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link" href="#macedonia">
+          <a class="catalog__link" href="#macedonia" data-name="macedonia">
             <figure class="catalog__figure">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -132,7 +107,7 @@
           </a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link" href="#montenegro">
+          <a class="catalog__link" href="#montenegro" data-name="montenegro">
             <figure class="catalog__figure">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -149,7 +124,7 @@
           </a>
         </li>
         <li class="catalog__item">
-          <a class="catalog__link" href="#croatia">
+          <a class="catalog__link" href="#croatia" data-name="croatia">
             <figure class="catalog__figure">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -172,23 +147,23 @@
         <h2 class="visually-hidden">Описание посещяемых мест и отзывы</h2>
         <ul class="places__nav" id="place">
           <li class="places__nav-item">
-            <a class="places__nav-btn places__nav-btn--current" href="#"> Греция</a>
+            <a class="places__nav-btn places__nav-btn--current" href="#greece" data-name="greece"> Греция</a>
           </li>
           <li class="places__nav-item">
-            <a class="places__nav-btn" href="#">Албания</a>
+            <a class="places__nav-btn" href="#albania" data-name="albania">Албания</a>
           </li>
           <li class="places__nav-item">
-            <a class="places__nav-btn" href="#">Македония</a>
+            <a class="places__nav-btn" href="#macedonia" data-name="macedonia">Македония</a>
           </li>
           <li class="places__nav-item">
-            <a class="places__nav-btn" href="#">Черногория</a>
+            <a class="places__nav-btn" href="#montenegro" data-name="montenegro">Черногория</a>
           </li>
           <li class="places__nav-item">
-            <a class="places__nav-btn" href="#">Хорватия</a>
+            <a class="places__nav-btn" href="#croatia" data-name="croatia">Хорватия</a>
           </li>
         </ul>
         <ul class="places__list">
-          <li class="places__item  places__item--current" id="greece">
+          <li class="places__item  places__item--current" id="greece" data-name="greece">
             <div class="description">
               <h3 class="description__title title">Греция</h3>
               <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей,
@@ -235,7 +210,7 @@
               </div>
             </div>
           </li>
-          <li class="places__item" id="albania">
+          <li class="places__item" id="albania" data-name="albania">
             <div class="description">
               <h3 class="description__title title">Албания</h3>
               <p class="description__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой
@@ -280,7 +255,7 @@
               </div>
             </div>
           </li>
-          <li class="places__item" id="macedonia">
+          <li class="places__item" id="macedonia" data-name="macedonia">
             <div class="description">
               <h3 class="description__title title">Македония</h3>
               <p class="description__text">В Македонии нашей целью будет посетить Палаошник, который расположился в
@@ -325,7 +300,7 @@
               </div>
             </div>
           </li>
-          <li class="places__item" id="montenegro">
+          <li class="places__item" id="montenegro" data-name="montenegro">
             <div class="description">
               <h3 class="description__title title">Черногория</h3>
               <p class="description__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
@@ -367,7 +342,7 @@
               </div>
             </div>
           </li>
-          <li class="places__item" id="croatia">
+          <li class="places__item" id="croatia" data-name="croatia">
             <div class="description">
               <h3 class="description__title title">Хорватия</h3>
               <p class="description__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
@@ -589,6 +564,39 @@
         помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
     </section>
   </footer>
+
+  <template id="succes-popup">
+    <div class="modal modal--success">
+      <p class="modal__message">Форма успешно отправлена, <br>спасибо! :)</p>
+      <button class="modal__close" type="button" aria-label="Закрыть попап"></button>
+    </div>
+  </template>
+
+  <template id="buy-popup">
+    <div class="modal modal--buy">
+      <div class="modal__inner-wrap">
+        <p class="modal__title">Купить тур </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <ul class="modal__list">
+            <li class="modal__item modal__item--phone">
+              <label class="visually-hidden" for="phone">Введите телефон</label>
+              <input class="modal__input modal__input--phone" type="tel" name="tel" id="phone"
+                placeholder="+7 Введите 10 цифр номера" required>
+              <span class="modal__invalid">Данные не верны</span>
+            </li>
+            <li class="modal__item">
+              <label class="visually-hidden" for="email">Введите электронну почту</label>
+              <input class="modal__input modal__input--email" type="email" name="email" id="email" placeholder="E-mail">
+              <span class="modal__invalid">Данные не верны</span>
+            </li>
+          </ul>
+          <button class="modal__btn button" type="submit">Отправить</button>
+        </form>
+        <button class="modal__close" type="button" aria-label="Закрыть попап"></button>
+      </div>
+    </div>
+  </template>
+
   <script src="js/script.js"></script>
 </body>
 
