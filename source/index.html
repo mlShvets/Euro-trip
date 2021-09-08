@@ -24,7 +24,7 @@
       <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#tours">О путешествии</a>
+          <a class="main-nav__link" href="#places">О путешествии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#price">Цены</a>
@@ -51,7 +51,7 @@
     </section>
     <section class="catalog container">
       <div class="catalog__header">
-        <h2 class="catalog__title title">Места посещения</h2>
+        <h2 class="catalog__title title" id="places">Места посещения</h2>
         <p class="catalog__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
       <ul class="catalog__list">
@@ -500,7 +500,8 @@
             <li class="feedback__item feedback__item--phone">
               <label class="visually-hidden" for="phone">Введите телефон</label>
               <input class="feedback__input feedback__input--phone input-phone" type="tel" name="tel" id="phone"
-                placeholder="+7 Введите 10 цифр номера" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
+                placeholder="+7 Введите 10 цифр номера"
+                pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
               <span class="feedback__invalid">Данные не верны</span>
             </li>
             <li class="feedback__item">
@@ -520,25 +521,55 @@
       <h2 class="footer-trips__title">Следующие путешествия</h2>
       <div class="footer-trips__list-wrap">
         <ul class="footer-trips__list">
-          <li class="footer-trips__item">Марсель</li>
-          <li class="footer-trips__item">Ним</li>
-          <li class="footer-trips__item">Монпелье</li>
-          <li class="footer-trips__item">Барселона</li>
-          <li class="footer-trips__item">Пальма</li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Марсель</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Ним</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Монпелье</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Барселона</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Пальма</a>
+          </li>
         </ul>
         <ul class="footer-trips__list">
-          <li class="footer-trips__item">Сардиния</li>
-          <li class="footer-trips__item">Палермо</li>
-          <li class="footer-trips__item">Катания</li>
-          <li class="footer-trips__item">Неаполь</li>
-          <li class="footer-trips__item">Рим</li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Сардиния</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Палермо</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Катания</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Неаполь</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Рим</a>
+          </li>
         </ul>
         <ul class="footer-trips__list">
-          <li class="footer-trips__item">Корс</li>
-          <li class="footer-trips__item">Ницца</li>
-          <li class="footer-trips__item">Монако</li>
-          <li class="footer-trips__item">Динь-ле-Бен</li>
-          <li class="footer-trips__item">Гренобль</li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Корс</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Ницца</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Монако</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Динь-ле-Бен</a>
+          </li>
+          <li class="footer-trips__item">
+            <a class="footer-trips__link" href="#">Гренобль</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -578,7 +609,8 @@
           <li class="modal__item modal__item--phone">
             <label class="visually-hidden" for="popup-phone">Введите телефон</label>
             <input class="modal__input modal__input--phone input-phone" type="tel" name="tel" id="popup-phone"
-              placeholder="+7 Введите 10 цифр номера" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
+              placeholder="+7 Введите 10 цифр номера"
+              pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
             <span class="modal__invalid">Данные не верны</span>
           </li>
           <li class="modal__item">

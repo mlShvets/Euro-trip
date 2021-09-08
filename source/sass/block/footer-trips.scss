@@ -1,7 +1,4 @@
 .footer-trips {
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(20, 21, 23, 0.5);
   position: relative;
 
   &::after {
@@ -74,4 +71,11 @@
   &:not(:last-of-type) {
     margin-bottom: 10px;
   }
+}
+
+.footer-trips__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+  display: block;
 }
