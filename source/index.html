@@ -172,7 +172,7 @@
                 монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной
                 горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
                 царящая в монастырях Метеоры. </p>
-              <a class="description__btn button" href="#">Купить тур сейчас</a>
+              <a class="description__btn button buy-btn" href="#">Купить тур сейчас</a>
             </div>
             <div class="review">
               <div class="review__img-wrap">
@@ -219,7 +219,7 @@
                 и
                 слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до
                 такого мелкого состояния.</p>
-              <a class="description__btn button" href="#">Купить тур сейчас</a>
+              <a class="description__btn button buy-btn" href="#">Купить тур сейчас</a>
             </div>
             <div class="review">
               <div class="review__img-wrap">
@@ -263,7 +263,7 @@
                 заберемся
                 на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.
               </p>
-              <a class="description__btn button" href="#">Купить тур сейчас</a>
+              <a class="description__btn button buy-btn" href="#">Купить тур сейчас</a>
             </div>
             <div class="review">
               <div class="review__img-wrap">
@@ -306,7 +306,7 @@
               <p class="description__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
                 некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
                 каньона составляет 80 км. </p>
-              <a class="description__btn button" href="#">Купить тур сейчас</a>
+              <a class="description__btn button buy-btn" href="#">Купить тур сейчас</a>
             </div>
             <div class="review">
               <div class="review__img-wrap">
@@ -348,7 +348,7 @@
               <p class="description__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
                 увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными
                 скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет. </p>
-              <a class="description__btn button" href="#">Купить тур сейчас</a>
+              <a class="description__btn button buy-btn" href="#">Купить тур сейчас</a>
             </div>
             <div class="review">
               <div class="review__img-wrap">
@@ -440,7 +440,7 @@
               <p class="tariff__description-text">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a class="tariff__btn button" href="#">Купить тур сейчас</a>
+          <a class="tariff__btn button buy-btn" href="#">Купить тур сейчас</a>
         </li>
         <li class="tariff__item">
           <div class="tariff__header">
@@ -487,7 +487,7 @@
               <p class="tariff__description-text">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a class="tariff__btn button" href="#">Купить тур сейчас</a>
+          <a class="tariff__btn button buy-btn" href="#">Купить тур сейчас</a>
         </li>
       </ul>
     </section>
@@ -499,13 +499,13 @@
           <ul class="feedback__list">
             <li class="feedback__item feedback__item--phone">
               <label class="visually-hidden" for="phone">Введите телефон</label>
-              <input class="feedback__input feedback__input--phone" type="tel" name="tel" id="phone"
-                placeholder="+7 Введите 10 цифр номера" required>
+              <input class="feedback__input feedback__input--phone input-phone" type="tel" name="tel" id="phone"
+                placeholder="+7 Введите 10 цифр номера" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
               <span class="feedback__invalid">Данные не верны</span>
             </li>
             <li class="feedback__item">
               <label class="visually-hidden" for="email">Введите электронну почту</label>
-              <input class="feedback__input feedback__input--email" type="email" name="email" id="email"
+              <input class="feedback__input feedback__input--email input-email" type="email" name="email" id="email"
                 placeholder="E-mail">
               <span class="feedback__invalid">Данные не верны</span>
             </li>
@@ -565,37 +565,34 @@
     </section>
   </footer>
 
-  <template id="succes-popup">
-    <div class="modal modal--success">
-      <p class="modal__message">Форма успешно отправлена, <br>спасибо! :)</p>
+  <div class="modal modal--success">
+    <p class="modal__message">Форма успешно отправлена, <br>спасибо! :)</p>
+    <button class="modal__close" type="button" aria-label="Закрыть попап"></button>
+  </div>
+
+  <div class="modal modal--buy">
+    <div class="modal__inner-wrap">
+      <p class="modal__title">Купить тур </p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <ul class="modal__list">
+          <li class="modal__item modal__item--phone">
+            <label class="visually-hidden" for="popup-phone">Введите телефон</label>
+            <input class="modal__input modal__input--phone input-phone" type="tel" name="tel" id="popup-phone"
+              placeholder="+7 Введите 10 цифр номера" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" required>
+            <span class="modal__invalid">Данные не верны</span>
+          </li>
+          <li class="modal__item">
+            <label class="visually-hidden" for="popup-email">Введите электронну почту</label>
+            <input class="modal__input modal__input--email input-email" type="email" name="email" id="popup-email"
+              placeholder="E-mail">
+            <span class="modal__invalid">Данные не верны</span>
+          </li>
+        </ul>
+        <button class="modal__btn button" type="submit">Отправить</button>
+      </form>
       <button class="modal__close" type="button" aria-label="Закрыть попап"></button>
     </div>
-  </template>
-
-  <template id="buy-popup">
-    <div class="modal modal--buy">
-      <div class="modal__inner-wrap">
-        <p class="modal__title">Купить тур </p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-          <ul class="modal__list">
-            <li class="modal__item modal__item--phone">
-              <label class="visually-hidden" for="popup-phone">Введите телефон</label>
-              <input class="modal__input modal__input--phone" type="tel" name="tel" id="popup-phone"
-                placeholder="+7 Введите 10 цифр номера" required>
-              <span class="modal__invalid">Данные не верны</span>
-            </li>
-            <li class="modal__item">
-              <label class="visually-hidden" for="popup-email">Введите электронну почту</label>
-              <input class="modal__input modal__input--email" type="email" name="email" id="popup-email" placeholder="E-mail">
-              <span class="modal__invalid">Данные не верны</span>
-            </li>
-          </ul>
-          <button class="modal__btn button" type="submit">Отправить</button>
-        </form>
-        <button class="modal__close" type="button" aria-label="Закрыть попап"></button>
-      </div>
-    </div>
-  </template>
+  </div>
 
   <script src="js/script.min.js"></script>
 </body>
