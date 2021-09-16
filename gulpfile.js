@@ -18,6 +18,8 @@ var del = require("del");
 var gcmq = require('gulp-group-css-media-queries');
 var jsmin = require('gulp-jsmin');
 var htmlmin = require('gulp-htmlmin');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -119,6 +121,11 @@ gulp.task('minify', () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify", "minjs", "media-queries"));
 gulp.task("start", gulp.series("build", "server"));

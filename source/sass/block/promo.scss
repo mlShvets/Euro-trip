@@ -22,6 +22,7 @@
   }
 
   @media (min-width: $tablet) {
+    background-color: #497798;
     background-image: url("../img/background/promo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -85,6 +86,7 @@
     background-size: cover;
     background-position: center;
     background-image: url("../img/background/promo-mobile.jpg");
+    background-color: #497798;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/promo-mobile@2x.jpg");
